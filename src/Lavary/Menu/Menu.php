@@ -3,9 +3,12 @@
 namespace Lavary\Menu;
 
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Traits\Macroable;
 
 class Menu
 {
+    use Macroable;
+
     /**
      * Menu collection.
      *

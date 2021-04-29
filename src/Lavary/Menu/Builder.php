@@ -759,16 +759,16 @@ class Builder
         return $this->conf[$key] ?? $default;
     }
 
-     /**
-     * Add custom options
-     * One-time special additions can be made to the options to be applied to the menu.
-     *
-      * @param array       $options
-      * @param string|null $optionsFrom (optional, if you want to use the options of another
-      *                                 menu instead of "default" options, enter another menu name.)
-      * @return void
-     */
-    public function options(array $options, ?string $optionsFrom = 'default')
+    /**
+    * Add custom options
+    * One-time special additions can be made to the options to be applied to the menu.
+    *
+     * @param array       $options
+     * @param string|null $optionsFrom (optional, if you want to use the options of another
+     *                                 menu instead of "default" options, enter another menu name.)
+     * @return void
+    */
+    public function options(array $options, $optionsFrom = 'default')
     {
         if ($optionsFrom === null) {
             $this->conf = $options;
